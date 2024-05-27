@@ -1,1 +1,65 @@
-/bin/sh: 1: /home/ssit/jenkin/App/build_run.sh: Permission denied
+fatal: destination path 'App' already exists and is not an empty directory.
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 276B done
+#1 DONE 0.0s
+
+#2 [internal] load .dockerignore
+#2 transferring context: 2B done
+#2 DONE 0.0s
+
+#3 [auth] library/nginx:pull token for registry-1.docker.io
+#3 DONE 0.0s
+
+#4 [internal] load metadata for docker.io/library/nginx:alpine
+#4 DONE 1.7s
+
+#5 [1/2] FROM docker.io/library/nginx:alpine@sha256:516475cc129da42866742567714ddc681e5eed7b9ee0b9e9c015e464b4221a00
+#5 DONE 0.0s
+
+#6 [internal] load build context
+#6 transferring context: 32B done
+#6 DONE 0.0s
+
+#7 [2/2] COPY index.html /usr/share/nginx/html
+#7 CACHED
+
+#8 exporting to image
+#8 exporting layers done
+#8 writing image sha256:ad168fc9a7060b99d2cd55e5e8d1c553299b6fb0997c4eb8ab138c7908943959 done
+#8 naming to docker.io/lakshmi039/my_web_app:latest done
+#8 DONE 0.0s
+Authenticating with existing credentials...
+WARNING! Your password will be stored unencrypted in /home/ssit/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+The push refers to repository [docker.io/lakshmi039/my_web_app]
+d920fa7d02b1: Preparing
+ce495f7b0b7d: Preparing
+9c70f446fbe2: Preparing
+5be225e16e44: Preparing
+3d04ead9b400: Preparing
+af5598fef05f: Preparing
+8fbd5a835e5e: Preparing
+75061be64847: Preparing
+d4fc045c9e3a: Preparing
+af5598fef05f: Waiting
+8fbd5a835e5e: Waiting
+75061be64847: Waiting
+d4fc045c9e3a: Waiting
+d920fa7d02b1: Layer already exists
+9c70f446fbe2: Layer already exists
+ce495f7b0b7d: Layer already exists
+3d04ead9b400: Layer already exists
+5be225e16e44: Layer already exists
+8fbd5a835e5e: Layer already exists
+75061be64847: Layer already exists
+d4fc045c9e3a: Layer already exists
+af5598fef05f: Layer already exists
+latest: digest: sha256:4fcd7db2f3f05adf3d7e810cfe251a7598985556e2af1f8fa4d6f8c9ab9a69b0 size: 2196
+my_web_app_container
+my_web_app_container
+5bed719f9187be32b9591c377d38351a3b0a71e4daf1bfb9393f30d6f336cdf1
