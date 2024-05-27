@@ -19,4 +19,4 @@ docker container rm my_web_app_container
 
 docker build -t "$TAG" -t "$LATEST" --build-arg VERSION="$VERSION" --build-arg BUILD_TIMESTAMP="$BUILD_TIMESTAMP" . 
 
-docker run -d -p 80:80 --name my_web_app_container lakshmi039:my_web_app"$VERSION"
+docker run -d -p 8081:80 --name my_web_app_container lakshmi039:my_web_app"$VERSION"
