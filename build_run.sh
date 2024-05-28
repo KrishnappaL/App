@@ -5,13 +5,14 @@
 cd App
 BUILD_TIMESTAMP=$( date '+%F_%H:%M:%S')
 echo "Time: $BUILD_TIMESTAMP"
+pwd
 REMOTE=origin
 BRANCH=main
 git fetch
-if [["$(git rev-parse $BRANCH)" != "$(git rev-parse "$REMOTE/$BRANCH")" ]];  then
-        #Run your script
-git pull
 
+if [[ "$(git rev-parse $BRANCH)" != "$(git rev-parse "$REMOTE/$BRANCH")" ]]; then
+	echo "change found on remote"
+git pull
 #Build the Docker image
 docker build -t lakshmi039/my_web_app:latest  .
 
