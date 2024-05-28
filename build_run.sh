@@ -2,7 +2,8 @@
 #clone the github repo
 #git clone https://github.com/KrishnappaL/App.git
 
-cd App
+cd /home/ssit/App
+
 BUILD_TIMESTAMP=$( date '+%F_%H:%M:%S')
 echo "Time: $BUILD_TIMESTAMP"
 pwd
