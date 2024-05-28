@@ -1,6 +1,6 @@
 #!/bin/bash
 #clone the github repo
-git clone https://github.com/KrishnappaL/App.git
+#git clone https://github.com/KrishnappaL/App.git
 
 cd App
 BUILD_TIMESTAMP=$( date '+%F_%H:%M:%S')
