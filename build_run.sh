@@ -2,7 +2,7 @@
 #clone the github repo
 #git clone https://github.com/KrishnappaL/App.git
 
-cd /home/ssit/App
+cd /home/lakshmi/App
 VERSION=$(git log -1 --pretty=%h)
 REPO="lakshmi039/my_web_app:"
 TAG="$REPO$VERSION"
